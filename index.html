@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>teste 02</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Diário de Bordo - Projeto Chá</h1>
+
+  <div id="logo-inicial">
+    <img src="log.png" alt="Logo do Projeto Chá" />
+  </div>
+
+  <button id="btn-equipe" onclick="mostrarEquipe()">Conheça nossa equipe</button>
+
+  <div class="botoes" id="botoes-frutas">
+    <button id="btn-uva" onclick="mostrar('uva', this)">Uva</button>
+    <button id="btn-babosa" onclick="mostrar('babosa', this)">Babosa</button>
+    <button id="btn-hortela" onclick="mostrar('hortela', this)">Hortelã</button>
+  </div>
+
+  <div id="uva" class="conteudo">
+    <h2>Uva</h2>
+    <p><strong>Contexto histórico:</strong> Originada da Europa e Oriente Médio, a uva é um fruto da videira. Seu nome científico é Vitis vinifera L. e sua família botânica é a Vitaceae. A videira apresenta troncos retorcidos e flores esverdeadas, sendo uma planta própria de regiões de clima temperado. Registros apontam que o cultivo da uva se iniciou no período Neolítico, na região do Egito e Ásia Menor.</p>
+    <p><strong>Importância:</strong> A uva tem grande importância religiosa, especialmente no cristianismo, onde simboliza o sangue de Cristo e a nova aliança com Deus. É citada na Bíblia como símbolo de abundância e bênçãos divinas, e o vinho feito da uva é usado em rituais como a Ceia do Senhor, representando a salvação.</p>
+    <p><strong>Benefícios</strong></p>
+     <ul style="list-style-type: square;">
+      <li>Auxilia na diminuição do açúcar no sangue;</li>
+      <li>Ação anti-infecciosa;</li>
+      <li>Benefícios para os olhos;</li>
+      <li>Combate à prisão de ventre;</li>
+      <li>Combate ao envelhecimento precoce.</li>
+    </ul>
+    <p><strong>Malefícios:</strong></p>
+    <ul style="list-style-type: square;">
+      <li>Aumento dos níveis de açúcar no sangue;</li>
+      <li>Excesso de potássio;</li>
+      <li>Reações alérgicas;</li>
+      <li>Problemas digestivos;</li>
+      <li>Presença de agrotóxicos.</li>
+    </ul>
+    <p><strong>Contraindicações:</strong></p>
+    <ul style="list-style-type: square;">
+      <li>Diabéticos;.</li>
+      <li>Pacientes com problemas renais;</li>
+      <li>Pessoas com gastrite.</li>
+    </ul>
+    <h3>NOSSAS RECEITAS</h3>
+    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px;">
+      <img src="https://i0.wp.com/fabiofast.com/wp-content/uploads/2019/10/sorvete-de-uva-768x512.jpg?fit=768%2C512&ssl=1" alt="       
+Sorvete:
+ - 2 lata de leite condensado;
+ - 2 caixa de creme de leite;
+ - s400g de uvas pretas." style="width: 200px; border-radius: 8px;" onclick="abrirModal(this)">
+      <img src="https://mejorconsalud.as.com/wp-content/uploads/2021/08/mermelada-uva-casera.jpg?auto=webp&quality=45&width=1920&crop=16:9,smart,safe" alt="
+Geleia:
+ - 1 kg de uvas pretas;
+ - 400 g de açúcar refinado;
+ - Suco de 1 limão;
+ - Raspas da casca de 1 limão." style="width: 200px; border-radius: 8px;" onclick="abrirModal(this)">
+    </div>
+  </div>
+
+  <div id="babosa" class="conteudo">
+    <h2>Babosa</h2>
+    <p><strong>Contexto histórico:</strong> A babosa é uma planta originária do norte da África, tendo sido introduzida no Brasil pelos colonizadores portugueses no século XVI. Conhecida cientificamente como Aloe vera, pertence à família Asphodelaceae. Esta planta suculenta é muito utilizada em tratamentos medicinais e cosméticos desde a antiguidade.</p>
+    <p><strong>Importância:</strong> A babosa é valorizada por suas propriedades curativas, anti-inflamatórias e hidratantes, sendo usada para tratar queimaduras, feridas e problemas dermatológicos. Também é muito presente em cosméticos para cuidados com a pele e cabelo.</p>
+    <p><strong>Benefícios:</strong></p>
+    <ul style="list-style-type: square;">
+      <li>Ajuda na cicatrização de feridas;</li>
+      <li>Propriedades anti-inflamatórias;</li>
+      <li>Hidratação profunda da pele;</li>
+      <li>Auxilia no tratamento de queimaduras;</li>
+      <li>Fortalece os cabelos e estimula o crescimento.</li>
+    </ul>
+    <p><strong>Malefícios:</strong></p>
+    <ul style="list-style-type: square;">
+      <li>Uso excessivo pode causar irritação;</li>
+      <li>Pode causar reações alérgicas em algumas pessoas;</li>
+      <li>Uso interno sem orientação pode ser tóxico.</li>
+    </ul>
+    <p><strong>Contraindicações:</strong></p>
+    <ul style="list-style-type: square;">
+      <li>Gestantes e lactantes devem evitar uso interno;</li>
+      <li>Pessoas com alergia a plantas da família Liliaceae.</li>
+    </ul>
+    <h3>NOSSAS RECEITAS</h3>
+    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px;">
+      <img src=" https://th.bing.com/th/id/R.9d10f96f062bcf1714778da9e5549d6a?rik=oyupLuyz%2bmw5uw&riu=http%3a%2f%2fwww.dicasonline.tv%2fwp-content%2fuploads%2fbabosa_dicas_online-4-758x396.jpg&ehk=1hD7sokMMymGcnehAdhV0YBWde8vV3IkKr47lkuEkmI%3d&risl=&pid=ImgRaw&r=0" alt="
+Sabonete em barra:
+ - 4 Sabonete de glicerina;
+ - 3 Babosas." style="width: 200px; border-radius: 8px;" onclick="abrirModal(this)">
+      <img src=" https://down-br.img.susercontent.com/file/br-11134207-7r98q-lmmgg08yztbfbf" alt="
+Tônico p/ crescimento do cabelo:
+ - 100 ml de soro fisiológico;
+ - 4 folhas de babosa;
+ - 2 colheres de sopa de óleo de coco." style="width: 200px; border-radius: 8px;" onclick="abrirModal(this)">
+    
+    </div>
+  </div>
+
+  <div id="hortela" class="conteudo">
+    <h2>Hortelã</h2>
+    <p><strong>Contexto histórico:</strong> A hortelã é uma planta originária da Europa e Ásia, conhecida desde a antiguidade por seu aroma refrescante e propriedades medicinais. Seu nome científico é Mentha piperita, pertencente à família Lamiaceae. É amplamente utilizada em culinária, cosméticos e medicina tradicional.</p>
+    <p><strong>Importância:</strong> A hortelã é usada para aliviar problemas digestivos, dores de cabeça, além de ser ingrediente popular em chás e doces. Também tem propriedades antibacterianas e antivirais.</p>
+    <p><strong>Benefícios:</strong></p>
+    <ul style="list-style-type: square;">
+      <li>Melhora a digestão;</li>
+      <li>Alivia dores de cabeça;</li>
+      <li>Propriedades antibacterianas;</li>
+      <li>Refresca o hálito;</li>
+      <li>Ajuda a aliviar sintomas de resfriados.</li>
+    </ul>
+    <p><strong>Malefícios:</strong></p>
+    <ul style="list-style-type: square;">
+      <li>Pode causar alergias;</li>
+      <li>Uso excessivo pode causar refluxo;</li>
+      <li>Contraindicado para pessoas com refluxo gastroesofágico em excesso.</li>
+    </ul>
+    <p><strong>Contraindicações:</strong></p>
+    <ul style="list-style-type: square;">
+      <li>Gestantes devem evitar consumo em excesso;</li>
+      <li>Pessoas com refluxo gastroesofágico devem evitar.</li>
+    </ul>
+    <H3>NOSSAS RECEITAS</H3>
+    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px;">
+      <img src="https://i.pinimg.com/736x/8b/64/95/8b6495be97d5860436aabd128f4ca946.jpg" alt="
+Brigadeiro:
+ - 2 caixa de leite condensado;
+ - 2 caixa de creme de leite;
+ - 160 gramas de chocolate branco;
+ - 80 gramas de hortelã fresco;
+ - 20 gramas de manteiga." style="width: 200px; border-radius: 8px; font-family: Verdana, Geneva, Tahoma, sans-serif;" onclick="abrirModal(this)">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2zOZ3EfEokscL2GD_Jh92-bQeOM38XDumTDus63f0VGtrmG1djj5WCeAEjw7XhFPeRwi8Ath8w3oip5gaWI5yF1yIJeqVzcUleLYeyTaEur7l60BBp6nEGTAl3anWUL1DzKAUUJi-Dm-4/s1600/requeijhortela.jpg" alt="
+Patê:
+- 1 xícara de folhas de hortelã;
+- 1 xícara de maionese;
+- 1/2 de creme de leite;
+- 1 dente de alho pequeno;
+- 1/2 de cebola;
+Pimenta do reino." style="width: 200px; border-radius: 8px;" onclick="abrirModal(this)">
+    </div>
+  </div>
+
+  <div id="equipe">
+    <h2>Equipe Campal</h2>
+    <div id="fotos-equipe">
+      <div class="membro">
+        <img src="equipe.camp.jpg" alt="EQUIPE CAMPAL" onclick="abrirModal(this)" />
+        <p>ANA APARECIDA<br>ANGELINA<br>ANA CAROLINE<br>MATEUS ALVES<br>MARIA LUIZA<br>GUSTAVO HENRIQUE<br>PEDRO ISMAEL<br>ELOÁ</p>
+      </div>
+      <div class="membro">
+        <img src="equipe.auditorio.jpg" alt="EQUIPE AUDITÓRIO" onclick="abrirModal(this)" />
+        <p>ANA APARECIDA<br>ANGELINA<br>ANA CAROLINE<br>GUSTAVO<br>PEDRO ISMAEL<br>ELOÁ</p>
+      </div>
+      <div class="membro">
+        <img src="stand.jpg" alt="EQUIPE ESTAND" onclick="abrirModal(this)" />
+        <p>ANGELINA<br>MATEUS ALVES<br>MARIA LUIZA<br>HENRIQUE<br>ELOÁ</p>
+      </div>
+      <div class="membro">
+        <img src="cracha.jpg" alt="NOSSO CRACHÁ" onclick="abrirModal(this)" />
+        <p>Nosso Crachá</p>
+      </div>
+      <div class="membro">
+        <img src="log.jpg" alt="NOSSA LOGO" onclick="abrirModal(this)" />
+        <p>Nossa logo</p>
+      </div>
+    </div>
+    <button id="btn-voltar" onclick="voltar()">Voltar</button>
+  </div>
+  <div id="modal" onclick="fecharModal()">
+    <img src="log.jpg" alt="Imagem ampliada" />
+    <p></p>
+  </div>
+</body>
+</html>
